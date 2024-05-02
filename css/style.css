@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header .collapse .nav-item .active {
+  color: green !important;
+}
+header .collapse .nav-item a {
+  position: relative;
+}
+
+header .collapse a:hover {
+  color: green !important;
+}
+header .collapse .nav-item a::before {
+  content: "";
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+header .collapse .nav-item .active::before {
+  width: 100%;
+}
+header .nav-item a:hover::before {
+  width: 100%;
+}
+/* cyber_carousel*/
+.cyber_carousel .carousel_text {
+  /* cách 2 dùng để canh giữa phần tử */
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(39, 43, 54, 0.5);
+}
+.cyber_carousel .carousel_text img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+.cyber_carousel .carousel_text h2 {
+  font-size: 65px;
+  font-weight: 65px;
+}
+.cyber_carousel .carousel_text p {
+  font-size: 25px;
+}
+/* .cyber_carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(39, 43, 54, 0.106);
+} */
+.cyber_carousel .carousel-indicators button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 70px;
+}
+.cyber_carousel .carousel-indicators button.active {
+  background-color: #35a22c;
+}
+
+/* project */
+.cyber_project .nav-pills .nav-link.active {
+  color: white !important;
+  background-color: green;
+  border-color: green !important;
+}
+.cyber_project .row .col-4 .project_item .img img {
+  border-radius: 15px 15px 0 0;
+}
+.cyber_project .row .col-4 .project_item {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+}
+.cyber_project .project_item:hover span {
+  color: green;
+}
+.cyber_project .project_item .text {
+  border-top: unset;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+.cyber_project .project_item:hover .text {
+  border: 1px solid green;
+  border-top: transparent;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* available */
+.cyber_available {
+  text-align: center;
+  padding: 50px 0;
+  color: white;
+  background-image: url(./../image/3.jpg);
+  background-attachment: fixed;
+  height: 110vh;
+  position: relative;
+}
+.cyber_available::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 10, 12, 0.72);
+}
+.cyber_available .avai_item {
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.1);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.cyber_available .avai_item i {
+  display: block;
+  font-size: 48px;
+  color: #35a22c;
+}
+.cyber_available .avai_item h2 {
+  font-size: 20px;
+  font-weight: 600px;
+  padding: 27px;
+}
